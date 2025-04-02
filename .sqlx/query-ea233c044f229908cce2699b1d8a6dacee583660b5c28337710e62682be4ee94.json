@@ -1,0 +1,148 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "INSERT INTO users (first_name, last_name, calling_code, phone, password, created_at, updated_at, emailisverified, phoneisverified, first_time_login, is_active, is_organization_admin) \n        VALUES ($1, $2, $3, $4, $5, $6, $7, false, false, true, true, false) \n        RETURNING id, role_id, first_name, last_name, calling_code, phone, about_me, designation, email, emailisverified, phoneisverified, email_verified_at, phone_verified_at, photo, password, first_time_login, is_active, organization_id, is_organization_admin, created_at, updated_at",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Int8"
+      },
+      {
+        "ordinal": 1,
+        "name": "role_id",
+        "type_info": "Int8"
+      },
+      {
+        "ordinal": 2,
+        "name": "first_name",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 3,
+        "name": "last_name",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 4,
+        "name": "calling_code",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 5,
+        "name": "phone",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 6,
+        "name": "about_me",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 7,
+        "name": "designation",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 8,
+        "name": "email",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 9,
+        "name": "emailisverified",
+        "type_info": "Bool"
+      },
+      {
+        "ordinal": 10,
+        "name": "phoneisverified",
+        "type_info": "Bool"
+      },
+      {
+        "ordinal": 11,
+        "name": "email_verified_at",
+        "type_info": "Timestamp"
+      },
+      {
+        "ordinal": 12,
+        "name": "phone_verified_at",
+        "type_info": "Timestamp"
+      },
+      {
+        "ordinal": 13,
+        "name": "photo",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 14,
+        "name": "password",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 15,
+        "name": "first_time_login",
+        "type_info": "Bool"
+      },
+      {
+        "ordinal": 16,
+        "name": "is_active",
+        "type_info": "Bool"
+      },
+      {
+        "ordinal": 17,
+        "name": "organization_id",
+        "type_info": "Int8"
+      },
+      {
+        "ordinal": 18,
+        "name": "is_organization_admin",
+        "type_info": "Bool"
+      },
+      {
+        "ordinal": 19,
+        "name": "created_at",
+        "type_info": "Timestamp"
+      },
+      {
+        "ordinal": 20,
+        "name": "updated_at",
+        "type_info": "Timestamp"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Varchar",
+        "Varchar",
+        "Int4",
+        "Int4",
+        "Varchar",
+        "Timestamp",
+        "Timestamp"
+      ]
+    },
+    "nullable": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  "hash": "ea233c044f229908cce2699b1d8a6dacee583660b5c28337710e62682be4ee94"
+}

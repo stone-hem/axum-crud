@@ -1,0 +1,140 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT id, role_id, first_name, last_name, calling_code, phone, about_me, designation, email, emailisverified, phoneisverified, email_verified_at, phone_verified_at, photo, password, first_time_login, is_active, organization_id, is_organization_admin, created_at, updated_at FROM users",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Int8"
+      },
+      {
+        "ordinal": 1,
+        "name": "role_id",
+        "type_info": "Int8"
+      },
+      {
+        "ordinal": 2,
+        "name": "first_name",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 3,
+        "name": "last_name",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 4,
+        "name": "calling_code",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 5,
+        "name": "phone",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 6,
+        "name": "about_me",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 7,
+        "name": "designation",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 8,
+        "name": "email",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 9,
+        "name": "emailisverified",
+        "type_info": "Bool"
+      },
+      {
+        "ordinal": 10,
+        "name": "phoneisverified",
+        "type_info": "Bool"
+      },
+      {
+        "ordinal": 11,
+        "name": "email_verified_at",
+        "type_info": "Timestamp"
+      },
+      {
+        "ordinal": 12,
+        "name": "phone_verified_at",
+        "type_info": "Timestamp"
+      },
+      {
+        "ordinal": 13,
+        "name": "photo",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 14,
+        "name": "password",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 15,
+        "name": "first_time_login",
+        "type_info": "Bool"
+      },
+      {
+        "ordinal": 16,
+        "name": "is_active",
+        "type_info": "Bool"
+      },
+      {
+        "ordinal": 17,
+        "name": "organization_id",
+        "type_info": "Int8"
+      },
+      {
+        "ordinal": 18,
+        "name": "is_organization_admin",
+        "type_info": "Bool"
+      },
+      {
+        "ordinal": 19,
+        "name": "created_at",
+        "type_info": "Timestamp"
+      },
+      {
+        "ordinal": 20,
+        "name": "updated_at",
+        "type_info": "Timestamp"
+      }
+    ],
+    "parameters": {
+      "Left": []
+    },
+    "nullable": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  "hash": "46ef3fddec0b098fe0c9b15df9ed8334ddd3c052d050b28f7a558d3482df2787"
+}
